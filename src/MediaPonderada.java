@@ -14,25 +14,25 @@ public class MediaPonderada {
     public void coletarDadosDoAluno(){
         Scanner leitor = new Scanner(System.in);
 
-        System.out.print("Por favor, digite o seu nome:");
+        System.out.print("Por favor, digite o seu nome: ");
         nomeDoAluno = leitor.nextLine();
 
-        System.out.print("Agora digite a nota da primeira atividade:");
+        System.out.print("Agora digite a nota da primeira atividade: ");
         primeiraNotaDoAluno = leitor.nextDouble();
 
-        System.out.print("Qual é o peso dessa atividade?");
+        System.out.print("Qual é o peso dessa atividade: ");
         pesoDaPrimeiraNota = leitor.nextInt();
 
-        System.out.print("Digite a nota da segunda atividade:");
+        System.out.print("Digite a nota da segunda atividade: ");
         segundaNotaDoAluno = leitor.nextDouble();
 
-        System.out.print("Qual o peso da segunda atividade?");
+        System.out.print("Qual o peso da segunda atividade: ");
         pesoDaSegundaNota = leitor.nextInt();
 
-        System.out.print("Agora digite a nota da ultima atividade:");
+        System.out.print("Agora digite a nota da ultima atividade: ");
         terceiraNotaDoAluno = leitor.nextDouble();
 
-        System.out.print("Por fim, digite o peso desta atividade:");
+        System.out.print("Por fim, digite o peso desta atividade: ");
         pesoDaTerceiraNota = leitor.nextInt();
 
         calcularMediaPonderada();
@@ -41,7 +41,11 @@ public class MediaPonderada {
 
     public void calcularMediaPonderada(){
 
-        resultado = ((primeiraNotaDoAluno * pesoDaPrimeiraNota) + (segundaNotaDoAluno * pesoDaSegundaNota) + (terceiraNotaDoAluno * pesoDaTerceiraNota)) / (pesoDaPrimeiraNota + pesoDaSegundaNota + pesoDaTerceiraNota);
+        double somatoriaDasNotasXPeso = (primeiraNotaDoAluno * pesoDaPrimeiraNota) + (segundaNotaDoAluno * pesoDaSegundaNota) + (terceiraNotaDoAluno * pesoDaTerceiraNota);
+
+        double somatoriaDosPesos = pesoDaPrimeiraNota + pesoDaSegundaNota + pesoDaTerceiraNota;
+
+        resultado = somatoriaDasNotasXPeso / somatoriaDosPesos;
 
         exibirResultadoDaMediaPonderada();
     }
