@@ -51,7 +51,7 @@ public class MediaPonderada {
     }
 
     public void exibirResultadoDaMediaPonderada(){
-        String resultadoEmDecimais = String.format("%.2f", resultado);
+        String resultadoEmDecimais = String.format("%.1f", resultado);
         System.out.println("A média ponderada do aluno " + nomeDoAluno + " é: " + resultadoEmDecimais);
     }
 }
