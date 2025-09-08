@@ -14,25 +14,25 @@ public class MediaPonderada {
     public void coletarDadosDoAluno(){
         Scanner leitor = new Scanner(System.in);
 
-        System.out.println("Por favor, digite o seu nome:");
+        System.out.print("Por favor, digite o seu nome:");
         nomeDoAluno = leitor.nextLine();
 
-        System.out.println("Agora digite a nota da primeira atividade:");
+        System.out.print("Agora digite a nota da primeira atividade:");
         primeiraNotaDoAluno = leitor.nextDouble();
 
-        System.out.println("Qual é o peso dessa atividade?");
+        System.out.print("Qual é o peso dessa atividade?");
         pesoDaPrimeiraNota = leitor.nextInt();
 
-        System.out.println("Digite a nota da segunda atividade:");
+        System.out.print("Digite a nota da segunda atividade:");
         segundaNotaDoAluno = leitor.nextDouble();
 
-        System.out.println("Qual o peso da segunda atividade?");
+        System.out.print("Qual o peso da segunda atividade?");
         pesoDaSegundaNota = leitor.nextInt();
 
-        System.out.println("Agora digite a nota da ultima atividade:");
+        System.out.print("Agora digite a nota da ultima atividade:");
         terceiraNotaDoAluno = leitor.nextDouble();
 
-        System.out.println("Por fim, digite o peso desta atividade:");
+        System.out.print("Por fim, digite o peso desta atividade:");
         pesoDaTerceiraNota = leitor.nextInt();
 
         calcularMediaPonderada();
